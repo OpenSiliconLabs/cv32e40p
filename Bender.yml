@@ -16,9 +16,9 @@ package:
   name: riscv
 
 dependencies:
-  fpnew: { git: "https://github.com/OpenSiliconLabs/cvfpu.git", rev: osl-dev }
-  common_cells: { git: "https://github.com/OpenSiliconLabs/common_cells.git", rev: osl-dev }
-  tech_cells_generic: { git: "https://github.com/OpenSiliconLabs/tech_cells_generic.git", rev: osl-dev }
+  fpnew: { git: "git@github.com:OpenSiliconLabs/cvfpu.git", rev: osl-dev }
+  common_cells: { git: "git@github.com:OpenSiliconLabs/common_cells.git", rev: osl-dev }
+  tech_cells_generic: { git: "git@github.com:OpenSiliconLabs/tech_cells_generic.git", rev: osl-dev }
 
 sources:
   include_dirs:

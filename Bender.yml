@@ -16,9 +16,9 @@ package:
   name: riscv
 
 dependencies:
-  fpnew: { git: "git@github.com:OpenSiliconLabs/cvfpu.git", rev: osl-dev }
-  common_cells: { git: "git@github.com:OpenSiliconLabs/common_cells.git", rev: osl-dev }
-  tech_cells_generic: { git: "git@github.com:OpenSiliconLabs/tech_cells_generic.git", rev: osl-dev }
+  fpnew: { git: "https://github.com/OpenSiliconLabs/cvfpu.git", rev: osl-dev }
+  common_cells: { git: "https://github.com/OpenSiliconLabs/common_cells.git", rev: osl-dev }
+  tech_cells_generic: { git: "https://github.com/OpenSiliconLabs/tech_cells_generic.git", rev: osl-dev }
 
 sources:
   include_dirs:
@@ -35,20 +35,21 @@ sources:
     - rtl/cv32e40p_decoder.sv
     - rtl/cv32e40p_int_controller.sv
     - rtl/cv32e40p_ex_stage.sv
-    - rtl/cv32e40p_hwloop_controller.sv
     - rtl/cv32e40p_hwloop_regs.sv
     - rtl/cv32e40p_id_stage.sv
     - rtl/cv32e40p_if_stage.sv
     - rtl/cv32e40p_load_store_unit.sv
     - rtl/cv32e40p_mult.sv
+    - rtl/cv32e40p_fifo.sv
+    - rtl/cv32e40p_prefetch_controller.sv
     - rtl/cv32e40p_prefetch_buffer.sv
     - rtl/cv32e40p_obi_interface.sv
     - rtl/cv32e40p_core.sv
     - rtl/cv32e40p_apu_disp.sv
-    - rtl/cv32e40p_fetch_fifo.sv
     - rtl/cv32e40p_popcnt.sv
     - rtl/cv32e40p_ff_one.sv
     - rtl/cv32e40p_sleep_unit.sv
+    - rtl/cv32e40p_top.sv
     - target: asic
       files:
         - rtl/cv32e40p_register_file_latch.sv
